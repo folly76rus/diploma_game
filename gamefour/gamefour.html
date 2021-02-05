@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Game Four</title>
+		<link rel="stylesheet" href="./mdl/material.min.css">
+		<script src="./mdl/material.min.js"></script>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link href="style.css" rel="stylesheet">
+		<script src="gamefour.js"></script>
+    </head>
+    <body>
+		<div class="field">
+			
+			<div class="sun"></div>
+			<div class="cloud"><img src="cloud.png" alt="облако"></div>
+			<div class="cloud"><img src="cloud.png" alt="облако"></div>
+			<div class="colors">Цвета:</div>
+			<div class="pallete"> 
+				<div class="color" id="color0"></div>
+				<div class="color" id="color1"></div>
+				<div class="color" id="color2"></div>
+			</div>
+			<div class="equally">=</div>
+			<div class="answer" id="answer"></div>
+			<div class="ground"></div>
+			<div class="level" id="level"></div>
+			<div class="stem"><img src="stem.png" alt="стебель"></div>
+			<div class="flower">
+				<div class="petal" id="petal0"></div>
+				<div class="petal" id="petal1"></div>
+				<div class="petal" id="petal2"></div>
+				<div class="petal" id="petal3"></div>
+				<div class="petal" id="petal4"></div>
+				<div class="petal" id="petal5"></div>	
+				<div class="center" id="center"></div>				
+			</div>
+			<div class="message" id="message"></div>
+		</div>
+		<div class="menu">
+			Расскрась нужный лепесток так,<br>чтобы получился правильный ответ.<br>Для этого, можешь выбрать<br>понравившийся тебе цвет.<br>
+			Если ты хочешь изменить свой ответ<br> нажми кнопку "Сбросить".<br> Чтобы проверить как ты выполнил задание,<br> нажми кнопку "Проверить".<br>
+			<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent button"
+				type="button" onclick="checkNextLevel()">Проверить</button>
+			<br>	
+			<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent button"
+				type="button" onclick="refreshField()">Сбросить</button>
+			<br>
+			<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent button"
+				type="button" onclick="newGame()">Новая игра</button>
+			<br>
+			<a href="../index.html"">
+			<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent button"
+				type="button">Выбор игры</button>
+			</a>
+			<div class="change">
+				Какие числа перемножаем?<br>
+				<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect radio__button" for="option-1">
+					<input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
+					<span class="mdl-radio__label radio__label">Однозначные</span>
+				</label>
+				<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect radio__button" for="option-2">
+					<input type="radio" id="option-2" class="mdl-radio__button" name="options" value="2">
+					<span class="mdl-radio__label radio__label">Двузначные</span>
+				</label>
+				<br>
+				<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored button5"
+					type="button" onclick="changeMode()">Сменить числа</button>
+			</div>
+		</div>
+    </body>
+</html>

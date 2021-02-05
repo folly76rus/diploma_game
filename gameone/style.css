@@ -1,0 +1,105 @@
+body {
+	width: initial;
+	margin: 8px;
+	font-family: 'Open Sans', sans-serif;
+	color: #333;
+}
+
+.change {
+	top: 400px;
+	position:absolute;
+	font-family: 'Open Sans', sans-serif;
+	line-height: 30px;
+	font-size: 20px;
+}
+
+.button3 {
+	margin-top: 10px;
+}
+
+.radio__label {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+}
+
+.field {
+	float: left;
+}
+.task {
+	width: 300px;
+}
+.score {
+	width: 150px;
+}
+#task, #score {
+	line-height: 40px;
+	font-size: 20px;
+}
+
+.button {
+	position: absolute;
+	left: 320px;
+	top: 358px;
+}
+
+.button2 {
+	position: absolute;
+	left: 452px;
+	top: 358px;
+}
+
+.instruction {
+	width: 350px;
+	line-height: 24px;
+	font-size: 20px;
+	margin-left: 320px;
+}
+	
+.clearfix {
+	content: '';
+	display: block;
+	clear: both;
+}
+	
+.clouds {
+	width: 50px;
+	position: absolute;
+	-webkit-animation: Clouds-v 1s ease-in-out infinite;
+}
+	
+#cloud1 {
+	left: 25px;
+	-webkit-animation: Clouds-v 3s ease-in-out infinite;
+}
+	
+#cloud2 {
+	left: 95px;
+	-webkit-animation: Clouds-v 2s ease-in-out infinite;
+}
+	
+#cloud3 {
+	left: 165px;
+	-webkit-animation: Clouds-v 2.5s ease-in-out infinite;
+}
+	
+#cloud4 {
+	left: 235px;
+	-webkit-animation: Clouds-v 1.5s ease-in-out infinite;
+}
+			
+			
+/* Clouds CSS3 animations */
+
+@-webkit-keyframes Clouds-v {
+    from {
+        top: 47px;
+    }
+    50% {
+        top: 43px;
+    }
+    to {
+        top: 47px;
+    }
+}
+
+	/* End Clouds CSS3 Animation */

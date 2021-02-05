@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<link rel="stylesheet" href="./mdl/material.min.css">
+		<script src="./mdl/material.min.js"></script>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">		
+		<script src="gameone.js"></script>
+		<link href="style.css" rel="stylesheet">
+	</head>
+	<body onload="drawGameSVG()">
+		<div class="task" id="task"></div>
+		<!-- Create the SVG pane. -->
+		<img src="cloud.svg" class="clouds" id="cloud1"/>
+		<img src="cloud.svg" class="clouds" id="cloud2"/>
+		<img src="cloud.svg" class="clouds" id="cloud3"/>
+		<img src="cloud.svg" class="clouds" id="cloud4"/>
+		<svg class="field"xmlns="http://www.w3.org/2000/svg" height="300" width="300">
+			<!-- Create the board. -->
+			<rect x="1" y="1" width="300" height="300" fill="lightblue" id="board" />
+			<!-- Create the ball. -->
+			<circle cx="150" cy="280" r="10" fill="tomato" id="ball"/>
+			<!-- Create the paddle. -->
+			<text x="37" y="32" font-family="Open Sans" font-size="20" fill="#333" id="text0"></text>
+			<text x="107" y="32" font-family="Open Sans" font-size="20" fill="#333" id="text1"></text>
+			<text x="177" y="32" font-family="Open Sans" font-size="20" fill="#333" id="text2"></text>
+			<text x="247" y="32" font-family="Open Sans" font-size="20" fill="#333" id="text3"></text>
+			<text x="60" y="152" font-family="Open Sans" font-size="40" fill="#333" id="text4"></text>
+		</svg>
+		<div class="instruction">Помоги Пете попасть мячиком <br>по правильному облаку, решив<br>пример как можно больше раз.<br><br>Для управления мячем<br> используй клавиши.<br><br>↑(запустить шар)<br><br>← (влево)<br><br>→ (вправо)</div> 
+		<div class="clearfix"></div> 
+		<div class="score" id="score"></div>	
+		<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored button" onclick="newGame()">Новая игра</button>
+		<a href="../index.html"">
+		<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored button2" onclick="newGame()">Выбор игры</button>
+		</a>
+		<div class="change">
+			Какое число делим?<br>
+			<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
+				<input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
+				<span class="mdl-radio__label radio__label">Однозначное и Двузначное</span>
+			</label>
+			<br>
+			<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-2">
+				<input type="radio" id="option-2" class="mdl-radio__button" name="options" value="2">
+				<span class="mdl-radio__label radio__label">Трехзначное</span>
+			</label>
+			<br>
+			<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored button3"
+				type="button" onclick="changeMode()">Сменить числа</button>
+		</div>
+	</body>
+</html>

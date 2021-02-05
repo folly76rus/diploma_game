@@ -1,0 +1,353 @@
+body {
+	font-size: 16px;
+}
+
+.mdl-radio.is-checked .mdl-radio__outer-circle{border:2px solid #ff4081}
+
+.mdl-radio__inner-circle{background:#ff4081;}
+
+.mdl-radio__ripple-container .mdl-ripple{background:#ff4081;}
+	
+.change {
+	bottom:15px;
+	left: 450px;
+	position:absolute;
+	font-family: 'Open Sans', sans-serif;
+	line-height: 30px;
+	font-size: 20px;
+}
+
+.radio__label {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+}
+
+.clouds {
+	width: 16em;
+	position: absolute;
+	top: -1em;
+	-webkit-animation: Clouds-h 40s linear infinite, Clouds-v 10s ease-in-out infinite;
+}
+
+@media only screen and (max-width: 680px) {
+  .clouds {
+  	width: 25%;
+  	top: -2em;
+  }
+}
+/* Clouds CSS3 animations */
+
+@-webkit-keyframes Clouds-h {
+    from {
+        right: 0%;
+    }
+    to { 
+        right: 70%;
+    }
+}
+
+@-webkit-keyframes Clouds-v {
+    from {
+        top: 3em;
+    }
+    50% {
+        top: 1em;
+    }
+    to {
+        top: 3em;
+    }
+}
+.text {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	width: 1000px;
+	line-height: 40px;
+}
+.bar {
+	width: 500px;
+	height: 50px;
+}
+.task {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 30px;
+	top: 300px;
+	left: 350px;
+	position: relative;
+}
+
+.level {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	/*left: 20px;
+	position: relative;*/
+}
+.message {
+	top: 250px;
+	text-align:center;
+	color: black;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 50px;
+	width: 1000px;
+	position: absolute;
+}
+
+.container {
+	width: 1000px;
+    padding: 16px;
+    margin: 0 auto;
+    position: relative;
+	background: linear-gradient(to bottom, #f0f9ff 0%,#cbebff 47%);
+	overflow: hidden;
+}
+.balloon {
+    width: 738px;
+	height: 470px;
+    margin: 0 auto;
+    padding-top: 30px;
+    position: relative;
+}
+.balloon > div {
+	transition: top ease-in-out 2s, opacity ease-in-out 0.5s;
+    width: 104px;
+    height: 140px;
+    background: rgba(182, 15, 97, 0.9);
+    border-radius: 0;
+    border-radius: 80% 80% 80% 80%;
+    margin: 0 auto;
+    position: absolute;
+    padding: 10px;
+    box-shadow: inset 17px 7px 10px rgba(182, 15, 97, 0.9);
+    -webkit-transform-origin: bottom center;
+}
+.balloon > div:nth-child(1) {
+	top: 400px;
+	opacity: 1;
+    background: rgba(182, 15, 97, 0.9);
+    left: 0;
+    box-shadow: inset 10px 10px 10px rgba(135, 11, 72, 0.9);
+    -webkit-animation: balloon1 6s ease-in-out infinite;
+    -moz-animation: balloon1 6s ease-in-out infinite;
+    -o-animation: balloon1 6s ease-in-out infinite;
+    animation: balloon1 6s ease-in-out infinite;
+}
+.balloon > div:nth-child(1):before {
+    color: rgba(182, 15, 97, 0.9);
+}
+.balloon > div:nth-child(2) {
+	opacity: 1;
+	top: 400px;
+    background: rgba(242, 112, 45, 0.9);
+    left: 120px;
+    box-shadow: inset 10px 10px 10px rgba(222, 85, 14, 0.9);
+    -webkit-animation: balloon2 6s ease-in-out infinite;
+    -moz-animation: balloon2 6s ease-in-out infinite;
+    -o-animation: balloon2 6s ease-in-out infinite;
+    animation: balloon2 6s ease-in-out infinite;
+}
+.balloon > div:nth-child(2):before {
+    color: rgba(242, 112, 45, 0.9);
+}
+.balloon > div:nth-child(3) {
+	opacity: 1;
+	top: 400px;
+    background: rgba(45, 181, 167, 0.9);
+    left: 240px;
+    box-shadow: inset 10px 10px 10px rgba(35, 140, 129, 0.9);
+    -webkit-animation: balloon4 6s ease-in-out infinite;
+    -moz-animation: balloon4 6s ease-in-out infinite;
+    -o-animation: balloon4 6s ease-in-out infinite;
+    animation: balloon4 6s ease-in-out infinite;
+}
+.balloon > div:nth-child(3):before {
+    color: rgba(45, 181, 167, 0.9);
+}
+.balloon > div:nth-child(4) {
+	opacity: 1;
+	top: 400px;
+    background: rgba(190, 61, 244, 0.9);
+    left: 360px;
+    box-shadow: inset 10px 10px 10px rgba(173, 14, 240, 0.9);
+    -webkit-animation: balloon1 5s ease-in-out infinite;
+    -moz-animation: balloon1 5s ease-in-out infinite;
+    -o-animation: balloon1 5s ease-in-out infinite;
+    animation: balloon1 5s ease-in-out infinite;
+}
+.balloon > div:nth-child(4):before {
+    color: rgba(190, 61, 244, 0.9);
+}
+.balloon > div:nth-child(5) {
+	opacity: 1;
+	top: 400px;
+    background: rgba(180, 224, 67, 0.9);
+    left: 480px;
+    box-shadow: inset 10px 10px 10px rgba(158, 206, 34, 0.9);
+    -webkit-animation: balloon3 5s ease-in-out infinite;
+    -moz-animation: balloon3 5s ease-in-out infinite;
+    -o-animation: balloon3 5s ease-in-out infinite;
+    animation: balloon3 5s ease-in-out infinite;
+}
+.balloon > div:nth-child(5):before {
+    color: rgba(180, 224, 67, 0.9);
+}
+.balloon > div:nth-child(6) {
+	opacity: 1;
+	top: 400px;
+    background: rgba(242, 194, 58, 0.9);
+    left: 600px;
+    box-shadow: inset 10px 10px 10px rgba(234, 177, 15, 0.9);
+    -webkit-animation: balloon2 3s ease-in-out infinite;
+    -moz-animation: balloon2 3s ease-in-out infinite;
+    -o-animation: balloon2 3s ease-in-out infinite;
+    animation: balloon2 3s ease-in-out infinite;
+}
+.balloon > div:nth-child(6):before {
+    color: rgba(242, 194, 58, 0.9);
+}
+.balloon > div:before {
+    color: rgba(182, 15, 97, 0.9);
+    position: absolute;
+    bottom: -11px;
+    left: 52px;
+    content:"▲";
+    font-size: 1em;
+}
+.ballspan {
+    font-size: 4.8em;
+    color: white;
+    position: relative;
+    top: 60px;
+    left: 45%;
+    margin-left: -27px;
+}
+/*BALLOON 1 4*/
+ @-webkit-keyframes balloon1 {
+    0%, 100% {
+        -webkit-transform: translateY(-70px) rotate(-6deg); /* 0 */
+    }
+    50% {
+        -webkit-transform: translateY(-90px) rotate(8deg); /* 0 */
+    }
+}
+@-moz-keyframes balloon1 {
+    0%, 100% {
+        -moz-transform: translateY(-70px) rotate(-6deg);
+    }
+    50% {
+        -moz-transform: translateY(-90px) rotate(8deg);
+    }
+}
+@-o-keyframes balloon1 {
+    0%, 100% {
+        -o-transform: translateY(-70px) rotate(-6deg);
+    }
+    50% {
+        -o-transform: translateY(-90px) rotate(8deg);
+    }
+}
+@keyframes balloon1 {
+    0%, 100% {
+        transform: translateY(-70px) rotate(-6deg);
+    }
+    50% {
+        transform: translateY(-90px) rotate(8deg);
+    }
+}
+/* BAllOON 2 5*/
+ @-webkit-keyframes balloon2 {
+    0%, 100% {
+        -webkit-transform: translateY(-70px) rotate(6deg);
+    }
+    50% {
+        -webkit-transform: translateY(-100px) rotate(-8deg);
+    }
+}
+@-moz-keyframes balloon2 {
+    0%, 100% {
+        -moz-transform: translateY(-70px) rotate(6deg);
+    }
+    50% {
+        -moz-transform: translateY(-100px) rotate(-8deg);
+    }
+}
+@-o-keyframes balloon2 {
+    0%, 100% {
+        -o-transform: translateY(-70px) rotate(6deg);
+    }
+    50% {
+        -o-transform: translateY(-100px) rotate(-8deg);
+    }
+}
+@keyframes balloon2 {
+    0%, 100% {
+        transform: translateY(-70px) rotate(6deg);
+    }
+    50% {
+        transform: translateY(-100px) rotate(-8deg);
+    }
+}
+/* BAllOON 0*/
+ @-webkit-keyframes balloon3 {
+    0%, 100% {
+        -webkit-transform: translate(0, -80px) rotate(6deg);
+    }
+    50% {
+        -webkit-transform: translate(-20px, -40px) rotate(-8deg);
+    }
+}
+@-moz-keyframes balloon3 {
+    0%, 100% {
+        -moz-transform: translate(0, -80px) rotate(6deg);
+    }
+    50% {
+        -moz-transform: translate(-20px, -40px) rotate(-8deg);
+    }
+}
+@-o-keyframes balloon3 {
+    0%, 100% {
+        -o-transform: translate(0, -80px) rotate(6deg);
+    }
+    50% {
+        -o-transform: translate(-20px, -40px) rotate(-8deg);
+    }
+}
+@keyframes balloon3 {
+    0%, 100% {
+        transform: translate(0, -80px) rotate(6deg);
+    }
+    50% {
+        transform: translate(-20px, -40px) rotate(-8deg);
+    }
+}
+/* BAllOON 3*/
+ @-webkit-keyframes balloon4 {
+    0%, 100% {
+        -webkit-transform: translate(10px, -80px) rotate(-8deg);
+    }
+    50% {
+        -webkit-transform: translate(-15px, -60px) rotate(10deg);
+    }
+}
+@-moz-keyframes balloon4 {
+    0%, 100% {
+        -moz-transform: translate(10px, -80px) rotate(-8deg);
+    }
+    50% {
+        -moz-transform: translate(-15px, -60px) rotate(10deg);
+    }
+}
+@-o-keyframes balloon4 {
+    0%, 100% {
+        -o-transform: translate(10px, -80px) rotate(-8deg);
+    }
+    50% {
+        -o-transform: translate(-15px, -60px) rotate(10deg);
+    }
+}
+@keyframes balloon4 {
+    0%, 100% {
+        transform: translate(10px, -80px) rotate(-8deg);
+    }
+    50% {
+        transform: translate(-15px, -60px) rotate(10deg);
+    }
+}
